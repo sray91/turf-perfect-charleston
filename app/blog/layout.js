@@ -1,4 +1,3 @@
-import Footer from "@/components/BlogFooter";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
@@ -6,8 +5,8 @@ import "@/app/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `The official blog of Turf Perfect Charleston`,
+  description: `Your home for tips and tricks for getting the most from your synthetic turf in Charleston, SC.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
@@ -15,9 +14,8 @@ export const metadata = {
 
 export default function BlogLayout({ children }) {
   return (
-    <div className={`${inter.className} dark:bg-slate-900 dark:text-slate-400 min-h-screen`}>
+    <div className={`${inter.className} min-h-screen`}>
       <div>{children}</div>
-      <Footer />
     </div>
   );
 }
