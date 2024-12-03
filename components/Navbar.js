@@ -25,33 +25,37 @@ const Navbar = () => {
           </svg>
         </button>
 
-        <ul className="hidden lg:flex space-x-4">
+        <ul className="hidden lg:flex space-x-4 font-light text-md">
           <li><Link href="/">HOME</Link></li>
-          <li><Link href="/services">SERVICES</Link></li>
-          <li><Link href="/faq">FAQ</Link></li>
+          <li><Link href="/#services">SERVICES</Link></li>
+          <li><Link href="/#faq">FAQ</Link></li>
           <li><Link href="/about">ABOUT</Link></li>
           <li><Link href="/contact">CONTACT</Link></li>
           <li><Link href="/blog">BLOG</Link></li>
         </ul>
 
-        <button className="hidden lg:block bg-yellow-500 text-black p-2 rounded">
-          Get a free quote!
-        </button>
+        <Link href="/contact" className="hidden lg:block">
+          <button className="bg-yellow-400 text-black text-lg tracking-tight font-bold p-4 mx-4 rounded-sm">
+            Get a free quote!
+          </button>
+        </Link>
       </div>
 
       {isOpen && (
         <div className="lg:hidden">
           <ul className="flex flex-col space-y-4 mt-4">
             <li><Link href="/">HOME</Link></li>
-            <li><Link href="/services">SERVICES</Link></li>
-            <li><Link href="/faq">FAQ</Link></li>
+            <li><Link href="/#services">SERVICES</Link></li>
+            <li><Link href="/#faq">FAQ</Link></li>
             <li><Link href="/about">ABOUT</Link></li>
             <li><Link href="/contact">CONTACT</Link></li>
             <li><Link href="/blog">BLOG</Link></li>
           </ul>
-          <button className="mt-4 w-full bg-yellow-500 text-black p-2 rounded">
-            Get a free quote!
-          </button>
+          <Link href="/contact" className="hidden lg:block">
+            <button className="mt-4 w-full bg-yellow-500 text-black p-2 rounded">
+              Get a free quote!
+            </button>
+          </Link>
         </div>
       )}
     </nav>
