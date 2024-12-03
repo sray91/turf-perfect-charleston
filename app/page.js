@@ -3,16 +3,22 @@ import Services from '../components/Services';
 import FAQ from '../components/FAQ';
 import About from '../components/About';
 import Contact from '../components/Contact';
-import PastWork from '@/components/PastWork';
+import PastWorkHero from '@/components/PastWorkHero';
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <Services />
-      <PastWork />
-      <FAQ />
-      <About />
+      <section id="services">
+        <Services />
+      </section>
+      <PastWorkHero />
+      <section id="about">
+        <About />
+      </section>
+      <section id="faq">
+        <FAQ />
+      </section>
       <Contact />
     </div>
   );
