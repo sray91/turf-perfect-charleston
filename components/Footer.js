@@ -4,7 +4,7 @@ const Footer = () => (
   <footer className="bg-gray-100 py-8 text-center">
     <div className="mb-6">
       <h2 className="font-bold text-lg">Get In Touch</h2>
-      <p>Email: <a href="mailto:matt@turfperfectcharleston.com" className="text-green-800">matt@turfperfectcharleston.com</a></p>
+      <p>Email: <a href="mailto:turfperfectcharleston@gmail.com" className="text-green-800">turfperfectcharleston@gmail.com</a></p>
       <p>Phone: (843) 994-6030</p>
       <p>Address: 4900 O&apos;Hear Avenue</p>
       <p>Mon – Sat 9:00am – 8:00pm</p>
